@@ -1,0 +1,126 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+nav{
+    display: flex;
+    background-color: rgb(57, 113, 217);
+    justify-content: space-around;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+.links a{
+    margin-left: 1vw;
+
+}
+
+.icon{
+    background: url(../images/sprite3.png) no-repeat;
+    width: 66px;
+    height: 66px;
+    display:inline-block;
+}
+
+#yt{
+    background-position: -439px -221px;
+}
+#twt{
+    background-position: -66px -72px;
+}
+#fb{
+    background-position: -439px -146px;
+}
+#plus{
+    background-position: -513px -221px;
+}
+
+.banner{
+    background-image: url(media/underwater.mp4);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.banner p{
+    color: white
+}
+
+article h1 span{
+    color: aqua;
+    font-family: 'Roboto';
+}
+
+article h1{
+    color: white;
+    font-size: xx-large;
+    bottom: 50%;
+    font-family: 'Roboto';
+}
+
+article h3{
+    color: white;
+    bottom: 50%;
+    font-family: 'Roboto';
+}
+
+#vidbg{ 
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    z-index:-1; }
+
+footer{
+    position: fixed;
+    bottom: 0%;
+    background-color: aqua;
+    width: 100vw;
+}
+
+@media screen and (max-width: 600px){
+    nav{
+        position: relative;
+        background-color: rgb(91, 173, 250);
+    }
+    .pagetitle{
+        background-color: rgb(91, 173, 250);
+        padding: 1vw;
+        color: black;
+    }
+
+    .links{
+        display: none;
+        z-index: 1;
+        position: absolute;
+        background-color: #b5e4ff;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        min-width: 100vw;
+    }
+
+    .links a{
+        color: black;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        display: block;
+    }
+
+.links a:hover{background-color: #ddd;}
+nav:hover .links{display:block;}
+nav:hover .pagetitle{background-color: #B5FFE1);}
+}
+
